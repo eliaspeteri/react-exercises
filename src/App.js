@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Exercise, Layout, NoPage } from './pages';
+import { Exercise, Home, Layout, NoPage } from './pages';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
           <Route path='1' element={<Exercise exercise={1} />} />
           <Route path='2' element={<Exercise exercise={2} />} />
           <Route path='3' element={<Exercise exercise={3} />} />
