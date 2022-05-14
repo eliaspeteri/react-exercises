@@ -5,7 +5,7 @@ type Props = {
 };
 
 const Animal = ({ animal }: Props) => {
-  return <div>{animal}</div>;
+  return <div className='card center'>{animal}</div>;
 };
 
 export default Animal;
