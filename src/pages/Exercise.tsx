@@ -158,27 +158,29 @@ const Exercise = ({ exercise }: Props) => {
             A simple form that queries the user for their name, which is then
             used to greet the user with, when the form is "sent".
           </p>
-          <form onSubmit={(event) => event?.preventDefault()}>
-            <input
-              type='text'
-              placeholder='First Name'
-              onChange={(event) => setFirstName(event?.target.value)}
-            />
-            <br />
-            <input
-              type='text'
-              placeholder='Last Name'
-              onChange={(event) => setLastName(event.target.value)}
-            />
-            <br />
-            <Button
-              color={'red'}
-              textColor={'white'}
-              onClick={() => alert(`Hello ${firstName} ${lastName}!`)}
-            >
-              GREET ME
-            </Button>
-          </form>
+          <div className='center'>
+            <form onSubmit={(event) => event?.preventDefault()}>
+              <input
+                type='text'
+                placeholder='First Name'
+                onChange={(event) => setFirstName(event?.target.value)}
+              />
+              <br />
+              <input
+                type='text'
+                placeholder='Last Name'
+                onChange={(event) => setLastName(event.target.value)}
+              />
+              <br />
+              <Button
+                color={'red'}
+                textColor={'white'}
+                onClick={() => alert(`Hello ${firstName} ${lastName}!`)}
+              >
+                GREET ME
+              </Button>
+            </form>
+          </div>
         </div>
       );
     case 8:

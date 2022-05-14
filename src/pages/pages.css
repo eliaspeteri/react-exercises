@@ -23,6 +23,18 @@ nav > ul > li > a {
   background-color: #000;
 }
 
+input {
+  border-radius: 1rem;
+  width: 100%;
+  display: block;
+  padding: 1rem;
+}
+
+form > button {
+  width: 100%;
+  display: block;
+}
+
 .card {
   background-color: white;
   margin: 1rem;
