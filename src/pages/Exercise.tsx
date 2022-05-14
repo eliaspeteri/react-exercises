@@ -147,9 +147,15 @@ const Exercise = ({ exercise }: Props) => {
           <h1>Exercise 8</h1>
           <div className='center'>
             {punchlines.map((punchline: IPunchline) => (
-              <div className='card'>
-                <h1 className='center'>{punchline.setup}</h1>
-                <p className='center'>{punchline.punchline}</p>
+              <div className='flip-card'>
+                <div className='flip-card-inner'>
+                  <div className='flip-card-front'>
+                    <h1 className='center'>{punchline.setup}</h1>
+                  </div>
+                  <div className='flip-card-back'>
+                    <h1 className='center'>{punchline.punchline}</h1>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
