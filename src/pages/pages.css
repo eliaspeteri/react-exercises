@@ -2,6 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.container {
+  outline: dashed 1px black;
+  margin: 25px;
+  width: 640px;
+  height: 640px;
+}
+
+.child {
+  width: 500px;
+  height: 500px;
+  background-color: #fec800;
 }
 
 .card {

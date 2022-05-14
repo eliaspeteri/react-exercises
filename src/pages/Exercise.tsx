@@ -57,8 +57,8 @@ const Exercise = ({ exercise }: Props) => {
       return (
         <div>
           <h1>Exercise 1</h1>
-          <div>
-            <div>Hello World!</div>
+          <div className='container center'>
+            <div className='child center'>Hello World!</div>
           </div>
         </div>
       );
