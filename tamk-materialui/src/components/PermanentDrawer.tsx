@@ -28,6 +28,11 @@ export default function PermanentDrawerLeft() {
   const handleProfileClick = (event: { preventDefault: () => void }) => {
     event.preventDefault();
   };
+
+  const handleSettingsClick = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+  };
+
   return (
     <div>
       <CssBaseline />
@@ -65,13 +70,13 @@ export default function PermanentDrawerLeft() {
           </ListItem>
           <Collapse in={open} timeout='auto' unmountOnExit>
             <List component='div' disablePadding>
-              <ListItem button>
+              <ListItem button onClick={handleProfileClick}>
                 <ListItemIcon>
                   <PersonIcon />
                 </ListItemIcon>
                 <ListItemText primary='Profile View'></ListItemText>
               </ListItem>
-              <ListItem button>
+              <ListItem button onClick={handleSettingsClick}>
                 <ListItemIcon>
                   <SettingsIcon />
                 </ListItemIcon>
